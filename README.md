@@ -29,19 +29,7 @@ Instalação:
  
 Configuração do Banco de Dados 
 
- - Criar o banco de dados "transirecommerce" e ajustar o arquivo /resources/application.properties
-
- - Sugestão:
- 
-spring.datasource.driver-class-name=com.mysql.jdbc.Driver
-
-spring.datasource.username=root
-
-spring.datasource.password=root
-
-spring.datasource.url=jdbc\:mysql\://localhost/transirecommerce
-
-spring.jpa.hibernate.ddl-auto=update
+ - Criar o banco de dados "transirecommerce" e ajustar seu usuário e senha do banco no arquivo /resources/application.properties
 
 Utilização:
 
