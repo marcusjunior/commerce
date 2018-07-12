@@ -32,6 +32,7 @@ Configuração do Banco de Dados
  - Criar o banco de dados "transirecommerce" e ajustar o arquivo /resources/application.properties
 
  - Sugestão:
+ 
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 spring.datasource.username=root
 spring.datasource.password=root
