@@ -34,11 +34,14 @@ Configuração do Banco de Dados
  - Sugestão:
  
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
-spring.datasource.username=root
-spring.datasource.password=root
-spring.datasource.url=jdbc\:mysql\://localhost/transirecommerce
-spring.jpa.hibernate.ddl-auto=update
 
+spring.datasource.username=root
+
+spring.datasource.password=root
+
+spring.datasource.url=jdbc\:mysql\://localhost/transirecommerce
+
+spring.jpa.hibernate.ddl-auto=update
 
 Utilização:
 
