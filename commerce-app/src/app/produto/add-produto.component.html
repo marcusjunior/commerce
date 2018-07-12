@@ -1,0 +1,21 @@
+<div class="col-md-6">
+  <h2 class="text-center">Detalhes do Produto</h2>
+<form>
+  <div class="form-group">
+    <label for="sku">SKU:</label>
+    <input type="sku" [(ngModel)]="produto.produtoId" placeholder="Sku" name="sku" class="form-control" id="sku">
+  </div>
+
+  <div class="form-group">
+    <label for="name">Descrição:</label>
+    <input [(ngModel)]="produto.name" placeholder="Descrição" name="name" class="form-control" id="name">
+  </div>
+
+  <div class="form-group">
+    <label for="preco">Preço:</label>
+    <input [(ngModel)]="produto.price" placeholder="Preço" name="preco" class="form-control" id="preco">
+  </div>
+
+  <button class="btn btn-success" (click)="createProduto()">Salvar</button>
+</form>
+</div>

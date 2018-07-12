@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>Transire Commerce</title>
+	<meta charset="UTF-8"/>
+    <!--/*/ <th:block th:include="fragmentos/headerinc :: head"></th:block> /*/-->
+</head>
+<body>
+<div class="container">
+    <!--/*/ <th:block th:include="fragmentos/header :: header"></th:block> /*/-->
+    <div th:if="${not #lists.isEmpty(produtos)}">
+        <h2>Lista de Produtos</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>Id</th>
+                <th>SKU</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Visualizar</th>
+                <th>Editar</th>
+                <th>Remover</th>
+            </tr>
+            <tr th:each="produto : ${produtos}">
+                <td th:text="${produto.id}"><a href="/product/${product.id}">Id</a></td>
+                <td th:text="${produto.produtoId}">SKU</td>
+                <td th:text="${produto.name}">Descrição</td>
+                <td th:text="${produto.price}">Preço</td>
+                <td><a th:href="${ '/produto/' + produto.id}"><img src="../../static/images/view.ico" th:src="@{/images/view.ico}"/></a></td>
+                <td><a th:href="${'/produto/edit/' + produto.id}"><img src="../../static/images/editar.ico" th:src="@{/images/editar.ico}"/></a></td>
+                <td><a th:href="${'/produto/delete/' + produto.id}"><img src="../../static/images/deletar.ico" th:src="@{/images/deletar.ico}"/></a></td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>

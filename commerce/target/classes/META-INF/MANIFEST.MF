@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: commerce
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: marcu
+Implementation-Vendor-Id: br.com.transire
+Build-Jdk: 1.8.0_172
+Implementation-URL: http://projects.spring.io/spring-boot/commerce/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
